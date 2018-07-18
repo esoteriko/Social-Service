@@ -1,5 +1,7 @@
-# README
-
+#My blog
+***
+This will be my web page which I'll create wiht Ruby on rails
+___
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

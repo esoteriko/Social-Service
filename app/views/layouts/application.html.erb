@@ -10,6 +10,27 @@
   </head>
 
   <body>
+    <header>
+      <nav class="be-blue white large-padding">
+        <ul class="no-list row center-xs middle-xs">
+          <li class="col-md">  
+              <h1 class="no-margin" id="logo">Logo de mi blog</h1>
+          </li>
+          <li class="col-md">
+            <%= link_to "Inicio", root_path %>
+          </li>
+          <li class="col-md">
+            Dieseño
+          </li>
+          <li class="col-md">
+            Programacion
+          </li>
+          <li class="col-md">
+            Tecnologia
+          </li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
