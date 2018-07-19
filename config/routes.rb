@@ -1,17 +1,8 @@
 Rails.application.routes.draw do
-  resources :articles
- #=begin
-  #get "/articles" #index
-  #post "/articles" #create
-  #delete "/articles" #delete	
-  #get "/articles/:id" #show
-  #get "/articles/new" #new
-  #get "/articles/:id/edit" #edit
-  #patch "/articles/:id" #update
-  #put "/articles/:id" #update
- #=end
-  
-  #CRUD 
+  get 'posts/new'
+  #resources :articles
+  get  'welcome/index'
+  post "welcome" => "welcome#create"
   root 'welcome#index'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html

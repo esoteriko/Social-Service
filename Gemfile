@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
+#gem 'nokogiri'
+#gem 'rack', '~>2.0'
+#gem 'sinatra', '1.4.7'
+
 ruby '2.5.1'
+gem 'bundler', '~>1.16.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
