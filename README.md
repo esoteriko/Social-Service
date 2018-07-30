@@ -1,4 +1,5 @@
-#My blog
+# My blog  
+<img src="squirreljpg.jpg" >
 ***
 This will be my web page which I'll create wiht Ruby on rails
 ___
@@ -24,4 +25,8 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<summary> Click me for know how run this proyect </summary>
+```ts
+. run_rails
+```
 # Social-Service
