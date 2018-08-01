@@ -26,6 +26,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
 <details>
 <summary> Click me for know how run this proyect </summary>
 ```ts

@@ -1,12 +1,11 @@
-<h2 class="title">Articulo</h2>
+
 <p class="campos">
-  <strong>Title:</strong>
-  <%= @article.title %>
+  <h2 class="titulo"><%= @article.title %></h2>
+  
 </p>
  
 <p class="campos">
-  <strong>Text:</strong>
-  <%= @article.body %>
+   <%= @article.body %>
 </p>
-
-<%= link_to 'Back', articles_path %>
+<br>
+<p><%= link_to 'Back', articles_path %></p>
