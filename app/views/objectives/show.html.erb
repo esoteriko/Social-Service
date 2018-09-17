@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @objective.user_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @objective.description %>
+</p>
+
+<p>
+  <strong>Period value:</strong>
+  <%= @objective.period_value %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @objective.time_id %>
+</p>
+<strong><p>Key results</p></strong>
+<% if @objective.results.any? %>
+  <ul>
+    <% @objective.results.each do |result| %>
+    <li><%= link_to result, result %></li> 
+    <% end %>
+  </ul>
+<% else %>
+  <p>no hay key results</p>
+<% end %>
+
+<%= link_to 'Edit', edit_objective_path(@objective) %> |
+<%= link_to 'Back', objectives_path %>

@@ -1,12 +1,11 @@
 <h2 class="title">Listing articles</h2>
  <center>
-<table cellpadding="25" cellspacing="5">
+<table class="table table-striped">
   <tr>
     <th>Title</th>
     <th>Body</th>
     <th></th>
   </tr>
- 
   <% @article.each do |article| %>
     <tr>
       <td><%= article.title %></td>

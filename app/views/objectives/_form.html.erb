@@ -1,0 +1,53 @@
+<%= form_with(model: objective, local: true) do |form| %>
+  <% if objective.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(objective.errors.count, "error") %> prohibited this objective from being saved:</h2>
+
+      <ul>
+      <% objective.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :period_value %>
+    <%= form.number_field :period_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :time_id %>
+    <%= form.text_field :time_id %>
+  </div>
+  <h2>Results</h2>
+ 
+  <%= form.fields_for :results do | result | %>
+    <div class="field">
+    <%= result.label :description %>
+    <%= result.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= result.label :kr_measure_id %>
+    <%= result.number_field :kr_measure_id %>
+  </div>
+  <%= result.check_box :_destroy %>
+        <%= result.label :_destroy, "Borrar" %>
+
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

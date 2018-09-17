@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @result.description %>
+</p>
+
+<p>
+  <strong>Kr measure:</strong>
+  <%= @result.kr_measure_id %>
+</p>
+
+<p>
+  <strong>Objectivo:</strong>
+  <%= @result.objective.description%>
+</p>
+
+<p>
+  <strong>Tiempo:</strong>
+  <%= @result.objective.period_value%> <%= @result.objective.time_id%>
+</p>
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>
